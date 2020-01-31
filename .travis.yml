@@ -4,4 +4,4 @@ services:
 before_install:
         - docker build -t imagetestbuild -f Dockerfile.dev .
 script:
-        - docker run -e CI=true imageTestApp npm run test -- --coverage
+        - docker run -e CI=true imagetestbuild npm run test -- --coverage
