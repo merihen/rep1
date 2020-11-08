@@ -3,6 +3,7 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install 
 COPY . .
+COPY Dockerfile .
 RUN npm run build
 
 FROM nginx
